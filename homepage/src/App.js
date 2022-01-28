@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <YoutubePlayer></YoutubePlayer>
+        <YoutubePlayer id = "M7lc1UVf-VE"></YoutubePlayer>
+        <button type="button" onClick= {() =>YoutubePlayer.updateImage()}> Play</button>
         <YoutubeSearch></YoutubeSearch>
       </header>
       

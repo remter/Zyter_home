@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import YoutubeResult from "./YoutubeResultComponent";
 
 import APIKey from "../APIKey";
+import YoutubePlayer from "./YoutubePlayerComponent";
 
 var youtube_url = "https://www.googleapis.com/youtube/v3/search"
 
@@ -59,6 +60,7 @@ class YoutubeSearch extends Component{
     }
 
     render(){
+        
         return(
             <div>
                 <div>

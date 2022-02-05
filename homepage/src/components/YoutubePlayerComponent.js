@@ -1,8 +1,6 @@
 
 
 import React, { useEffect } from "react"
-import { Col, Row, Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-
 
 
 // Default video
@@ -81,7 +79,7 @@ function YoutubePlayer(ytprops){
   }
 
   //Update Now Playing video
-  function updateVideo(videoId){
+  function updateVideo(videoId){ 
     
     
     console.log("Updated Id:" + videoId);
@@ -92,10 +90,7 @@ function YoutubePlayer(ytprops){
 
   var done = false;
   function onPlayerStateChange(event) {
-    if (event.data === window.YT.PlayerState.PLAYING && !done) {
-      setTimeout(stopVideo, 6000); // 
-      done = true;
-    }
+
   }
 
 
